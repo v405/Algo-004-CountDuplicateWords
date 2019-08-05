@@ -25,11 +25,12 @@ public class SolutionTest {
 
     @Test
     public void countUniqueWordsTest2(){
-        String input = "that that is is that that is not is not is that it it is";
+        String input = "that that is is that that is not is not is that it it is wutang";
         String expected =   "The 4 unique words are:\n" +
                             "that (Seen 5)\n" +
                             "is (Seen 5)\n" +
-                            "not (Seen 2)\n";
+                            "not (Seen 2)\n"+
+                            "wutang (Seen 1)";
         String actual = solution.countUniqueWords(input);
         Assert.assertEquals(expected, actual);
     }
